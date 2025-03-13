@@ -162,7 +162,7 @@ export default function WorkshopLanding() {
             </h1>
             <p className="text-xl text-gray-700 mb-3">
               <span className="text-[#f9bc66] font-bold">
-                APRENDIENDO A MONETIZAR EL CONOCIMIENTO DE OTROS <span className="italic">7 días</span>...
+                APRENDIENDO A MONETIZAR EL CONOCIMIENTO DE OTROS 
               </span>
             </p>
           </header>
@@ -177,11 +177,23 @@ export default function WorkshopLanding() {
               title="Video"
             />
           </div>
-<div className="flex flex-col items-center">
-<h4>Reconocido por:</h4>
-<img src="/forbes.webp" className="w-1/2" alt="" />
-</div>
+
+
+{isUnlocked && (
+<h1
+                    onClick={handleScroll}
+                    className="bg-gradient-to-r from-black via-[#013557] to-black text-white font-bold text-center text-3xl md:text-2xl py-4 px-8 rounded-lg w-full max-w-2xl mx-auto block mb-16 transition-all duration-300"
+                  >
+                    <span className="text-3xl md:text-3xl block">Estoy listo para...</span>
+                    <span className="text-xs md:text-lg block">Ayudar a mi primer influencer y generar ingresos</span>
+                  </h1>
+)}
 {!isUnlocked && (
+  <>
+  <div className="flex flex-col items-center">
+  <h4>Reconocido por:</h4>
+  <img src="/forbes.webp" className="w-1/2" alt="" />
+  </div>
 <footer className="mt-1 text-center text-sm text-gray-500 p-4">
                 <p className="mb-2">© 2025 Go Pitchering. All Rights Reserved.</p>
                 <p className="max-w-2xl text-sm mx-auto">
@@ -190,6 +202,7 @@ export default function WorkshopLanding() {
                   Esta página no es parte de la página de Meta o de Meta, Inc.
                 </p>
               </footer>
+              </>
 )}
           {showExtraContent && (
           <button
@@ -207,13 +220,7 @@ export default function WorkshopLanding() {
             <div className="bg-white rounded-2xl max-w-4xl w-[90%] p-2 md:p-6 mx-5 shadow-lg mt-7">
               <div>
                 <section className="w-full max-w-4xl mt-2 bg-white">
-                  <h1
-                    onClick={handleScroll}
-                    className="bg-gradient-to-r from-black via-[#013557] to-black text-white font-bold text-center text-3xl md:text-2xl py-4 px-8 rounded-lg w-full max-w-2xl mx-auto block mb-16 transition-all duration-300"
-                  >
-                    <span className="text-3xl md:text-3xl block">Estoy listo para...</span>
-                    <span className="text-xs md:text-lg block">Ayudar a mi primer influencer y generar ingresos</span>
-                  </h1>
+              
 
                   <div className="relative mb-12 w-full">
                     <img src="/mockup.png" alt="Mockup" className="w-full h-auto" />
