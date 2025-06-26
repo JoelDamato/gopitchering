@@ -59,14 +59,25 @@ const Home = () => {
   </div>
 )}
 
+      {/* Texto de contacto arriba del botón VER MÁS */}
+      <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 translate-y-[120px] text-center z-20">
+        <p className="text-white text-base sm:text-lg font-semibold">
+          Alejandro Daniel Gil Berois<br />
+          Soporte@gopitchering.com<br />
+          Contacto:+54 9 3516 36<br /><br />
+          Go Pitchering LLC
+        </p>
+      </div>
+
       <button
-        className="btn explore absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-[225px] px-4 py-2 text-black bg-white hover:bg-yellow-500/50 font-semibold shadow-lg"
+        className="btn mt-10 explore absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-[225px] px-4 py-2 text-black bg-white hover:bg-yellow-500/50 font-semibold shadow-lg"
+        onClick={() => window.location.href = "https://www.gopitchering.com/entrenamiento"}
       >
         VER MÁS
       </button>
 
       <a href="https://facebook.com" className="btn print absolute top-1/2 right-0 transform translate-y-[-50%] rotate-90 px-4 py-2 text-[#013557] border border-[#013557]">Facebook</a>
-      <a href="https://instagram.com" className="btn catalog absolute top-1/4 left-0 transform translate-y-[-50%] rotate-[-90deg] px-4 py-2 text-[#f9bc66] border border-[#f9bc66]">Instagram</a>
+      <a href="https://www.instagram.com/alejooo.gil" className="btn catalog absolute top-1/4 left-0 transform translate-y-[-50%] rotate-[-90deg] px-4 py-2 text-[#f9bc66] border border-[#f9bc66]">Instagram</a>
 
       {isVisible && (
         <div className="absolute inset-0 flex items-center justify-center bg-transparent pointer-events-none">
@@ -76,7 +87,7 @@ const Home = () => {
         </div>
       )}
 
-      <footer className="footer absolute bottom-8 left-1/2 transform -translate-x-1/2 w-full px-4 flex items-center justify-center gap-4 drop-shadow-[0_1px_1px_rgba(0,0,0,0.75)]">
+      <footer className="footer mt-5 absolute bottom-8 left-1/2 transform -translate-x-1/2 w-full px-4 flex items-center justify-center gap-4 drop-shadow-[0_1px_1px_rgba(0,0,0,0.75)]">
         <p className="text-white/80 text-sm sm:text-xs md:text-sm lg:text-base font-bold">Copyright © 2025</p>
       </footer>
 
