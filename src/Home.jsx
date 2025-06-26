@@ -61,7 +61,7 @@ const Home = () => {
 
       {/* Texto de contacto arriba del botón VER MÁS */}
       <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 translate-y-[120px] text-center z-20">
-        <p className="text-white text-base sm:text-lg font-semibold">
+        <p className="text-white text-xs sm:text-sm font-semibold">
           Alejandro Daniel Gil Berois<br />
           Soporte@gopitchering.com<br />
           Contacto:+54 9 3516 36<br /><br />
